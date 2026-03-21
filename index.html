@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netinho | Portfólio Profissional™</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Nunito:wght@400;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">N<span>.</span></div>
+            <div class="loader-terminal">
+                <p class="terminal-line" id="t1">&gt; Inicializando sistema de portfólio...</p>
+                <p class="terminal-line" id="t2">&gt; Buscando experiência profissional...</p>
+                <p class="terminal-line" id="t3">&gt; <span class="blink">█</span></p>
+                <div id="progress-wrap">
+                    <div class="progress-label">Carregando experiência: <span id="pct">0</span>%</div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+                <p class="terminal-line hidden" id="t4">&gt; <span class="warn">⚠ AVISO: experiência muito pequena.
+                        Carregamento lento.</span></p>
+                <p class="terminal-line hidden" id="t5">&gt; Experiência encontrada: <span class="highlight">1
+                        dia</span></p>
+                <p class="terminal-line hidden" id="t6">&gt; <span class="ok">✓ Sistema carregado. Boa sorte,
+                        Netinho.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main-content" class="hidden">
+
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <div class="nav-logo">N<span>.</span></div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#game">Mini Jogo</a></li>
+                <li><a href="#vida">Vida</a></li>
+                <li><a href="#metas">Metas</a></li>
+                <li><a href="#contato">Contratar?</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-noise"></div>
+
+            <!-- [NOVO] Wrapper duas colunas: texto (esquerda) + foto (direita) -->
+            <div class="hero-inner">
+
+                <!-- Coluna texto (conteúdo original preservado) -->
+                <div class="hero-content">
+                    <div class="hero-badge">⚡ Disponível para trabalho (por favor)</div>
+                    <h1 class="hero-name glitch" data-text="NETINHO">NETINHO</h1>
+                    <h2 class="hero-title">Profissional em <span class="underline-anim">construção</span></h2>
+                    <p class="hero-sub">18 anos de vida, 1 dia de carreira, infinitas possibilidades™</p>
+                    <p class="hero-sub2">Já carregou equipamentos de hospital. Já pode se aposentar.</p>
+                    <div class="hero-btns">
+                        <button class="btn-primary" id="btn-potencial"><i class="fas fa-magic"></i> Descobrir Potencial
+                            Oculto</button>
+                        <a href="#game" class="btn-secondary"><i class="fas fa-gamepad"></i> Jogar</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat"><span>1</span><small>Dia de Exp.</small></div>
+                        <div class="stat"><span>18</span><small>Anos de Vida</small></div>
+                        <div class="stat"><span>∞</span><small>Potencial</small></div>
+                        <div class="stat"><span>0</span><small>Arrependimentos*</small></div>
+                    </div>
+                    <p class="hero-footnote">*exceto aquele dia carregando caixa</p>
+                </div>
+
+                <!-- [NOVO] Coluna imagem -->
+                <div class="hero-img-col">
+                    <div class="hero-img-wrap">
+                        <div class="hero-img-ring"></div>
+                        <div class="hero-img-badge">🏆 1 dia de XP</div>
+                        <img src="assets/imagem1.jpg" alt="Netinho — Profissional em construção" class="hero-photo"
+                            loading="eager" />
+                    </div>
+                </div>
+
+            </div><!-- /hero-inner -->
+
+            <div class="hero-scroll-hint">
+                <span>Rola pra baixo</span>
+                <i class="fas fa-chevron-down bounce"></i>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Sobre <span>Mim</span></h2>
+                <p class="section-sub reveal">A história de um herói em ascensão</p>
+                <div class="sobre-grid">
+                    <div class="sobre-card reveal">
+                        <div class="card-icon">🎂</div>
+                        <h3>Idade</h3>
+                        <p>18 anos. Jovem, bonito e tecnicamente adulto há pouco tempo.</p>
+                    </div>
+                    <div class="sobre-card reveal">
+                        <div class="card-icon">📍</div>
+                        <h3>Localização</h3>
+                        <p>Planeta Terra. Disponível para trabalho remoto, presencial e até híbrido com
+                            vale-alimentação.</p>
+                    </div>
+                    <div class="sobre-card reveal">
+                        <div class="card-icon">💼</div>
+                        <h3>Experiência</h3>
+                        <p>1 dia de trabalho em hospital. Isso é mais do que a maioria das IAs tem.</p>
+                    </div>
+                    <div class="sobre-card reveal">
+                        <div class="card-icon">🎓</div>
+                        <h3>Formação</h3>
+                        <p>Escola da vida. Campus: YouTube. Mestrado em progresso (talvez).</p>
+                    </div>
+                    <div class="sobre-card reveal">
+                        <div class="card-icon">🧠</div>
+                        <h3>Especialidade</h3>
+                        <p>Aprender rápido quando precisa, procrastinar quando não precisa.</p>
+                    </div>
+                    <div class="sobre-card reveal">
+                        <div class="card-icon">🌟</div>
+                        <h3>Diferenciais</h3>
+                        <p>Nunca chegou atrasado... naquele dia de trabalho. Zero defeitos no histórico.</p>
+                    </div>
+                </div>
+                <div class="sobre-reveal-wrap reveal">
+                    <button class="btn-reveal" id="btn-reveal-skills"><i class="fas fa-eye"></i> Revelar Habilidades
+                        Ocultas</button>
+                    <div class="hidden-skills hidden" id="hidden-skills">
+                        <div class="hs-item">🏆 Campeão de ficar quieto na reunião</div>
+                        <div class="hs-item">🎯 Especialista em fingir que entendeu a pergunta</div>
+                        <div class="hs-item">🚀 Velocidade máxima quando tem lanche grátis</div>
+                        <div class="hs-item">🧩 Mestre em montar desculpas criativas</div>
+                        <div class="hs-item">📱 PhD em usar celular sem parecer que está usando</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title reveal">Skills <span>RPG</span></h2>
+                <p class="section-sub reveal">Atributos do personagem. Nível: Iniciante Lendário</p>
+                <div class="skills-grid">
+                    <div class="skill-card reveal"
+                        data-tooltip="Carregou caixas por 8 horas seguidas. Nível atlético confirmado.">
+                        <div class="skill-header"><span class="skill-icon">💪</span><span class="skill-name">Força
+                                Física</span><span class="skill-level">Lv. 10</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="95" style="--clr:#ff6b35"></div>
+                        </div>
+                        <span class="skill-pct">95%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Acorda quando o corpo decide. Normalmente depois das 10h.">
+                        <div class="skill-header"><span class="skill-icon">⏰</span><span class="skill-name">Acordar
+                                Cedo</span><span class="skill-level">Lv. 2</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="18" style="--clr:#f7c59f"></div>
+                        </div>
+                        <span class="skill-pct">18%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Motivação altamente instável. Varia conforme o dia, humor e presença de Wi-Fi.">
+                        <div class="skill-header"><span class="skill-icon">🔥</span><span
+                                class="skill-name">Motivação</span><span class="skill-level">Lv. ???</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill skill-animated" data-value="60" style="--clr:#a8edea"></div>
+                        </div>
+                        <span class="skill-pct" id="moti-pct">??%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Sabe ligar o computador. Já é um diferencial no mercado.">
+                        <div class="skill-header"><span class="skill-icon">💻</span><span
+                                class="skill-name">Conhecimento em TI</span><span class="skill-level">Lv. 3</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="30" style="--clr:#4ecdc4"></div>
+                        </div>
+                        <span class="skill-pct">30%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Comunicação verbal razoável. Comunicação não-verbal excelente (olhares).">
+                        <div class="skill-header"><span class="skill-icon">🗣️</span><span
+                                class="skill-name">Comunicação</span><span class="skill-level">Lv. 6</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="62" style="--clr:#ffe66d"></div>
+                        </div>
+                        <span class="skill-pct">62%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Totalmente confiável. Vai entregar — quando ficar pronto.">
+                        <div class="skill-header"><span class="skill-icon">📅</span><span class="skill-name">Cumprir
+                                Prazos</span><span class="skill-level">Lv. 4</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="42" style="--clr:#c77dff"></div>
+                        </div>
+                        <span class="skill-pct">42%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Já comeu macarrão com ketchup e sobreviveu. Culinária nível hard.">
+                        <div class="skill-header"><span class="skill-icon">🍳</span><span
+                                class="skill-name">Culinária</span><span class="skill-level">Lv. 1</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="10" style="--clr:#f72585"></div>
+                        </div>
+                        <span class="skill-pct">10%</span>
+                    </div>
+                    <div class="skill-card reveal"
+                        data-tooltip="Confia demais no GPS. Já ficou perdido com o GPS ligado.">
+                        <div class="skill-header"><span class="skill-icon">🗺️</span><span
+                                class="skill-name">Orientação</span><span class="skill-level">Lv. 2</span></div>
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-value="20" style="--clr:#7b2d8b"></div>
+                        </div>
+                        <span class="skill-pct">20%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIÊNCIA -->
+        <section id="experiencia" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Experiência <span>Profissional</span></h2>
+                <p class="section-sub reveal">Um currículo conciso. Elegante. Minimalista.</p>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Uma terça-feira • Duração: 1 dia
+                                útil (e muito suado)</div>
+                            <h3 class="timeline-role">Suporte Físico em TI — Nível 1</h3>
+                            <div class="timeline-company"><i class="fas fa-hospital"></i> Hospital [Nome Confidencial
+                                por motivos óbvios]</div>
+                            <p class="timeline-desc">Atuou diretamente no descarregamento e transporte de equipamentos
+                                de informática de alto valor patrimonial, garantindo a integridade física dos ativos
+                                tecnológicos da instituição. Demonstrou resiliência sob pressão, capacidade de trabalho
+                                em equipe e costas fortes.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Logística</span>
+                                <span class="tag">TI Física</span>
+                                <span class="tag">Trabalho em Equipe</span>
+                                <span class="tag">Força Bruta</span>
+                                <span class="tag">Sobrevivência</span>
+                            </div>
+                            <button class="btn-box" id="btn-caixas"><i class="fas fa-box"></i> Reviver o trauma</button>
+                            <div class="caixas-animation hidden" id="caixas-animation">
+                                <div class="box-emoji">📦</div>
+                                <div class="box-emoji">📦</div>
+                                <div class="box-emoji">📦</div>
+                                <div class="box-emoji">📦</div>
+                                <p class="box-text">Netinho: 😰 "Quantas caixas ainda têm???"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal future">
+                        <div class="timeline-dot future-dot"></div>
+                        <div class="timeline-card future-card">
+                            <div class="timeline-date">Em breve™</div>
+                            <h3 class="timeline-role">???</h3>
+                            <p class="timeline-desc">Vaga em aberto. Talvez seja a sua empresa. 👀</p>
+                        </div>
+                    </div>
+
+                    <!-- [NOVO] Bloco do exército com imagem2.png -->
+                    <div class="timeline-item reveal" id="exercito-item">
+                        <div class="timeline-dot exercito-dot"></div>
+                        <div class="timeline-card exercito-card">
+
+                            <!-- Faixa de alerta militar -->
+                            <div class="exercito-alerta">
+                                🚨 FASE ATUAL — MISSÃO EM ANDAMENTO
+                            </div>
+
+                            <!-- Layout: texto + imagem lado a lado -->
+                            <div class="exercito-inner">
+
+                                <!-- Lado texto -->
+                                <div class="exercito-texto">
+                                    <div class="timeline-date">
+                                        <i class="fas fa-shield-alt"></i>
+                                        Data: Incerta • Duração: Ainda calculando a fuga
+                                    </div>
+                                    <h3 class="timeline-role">Missão: Servir ou Fugir do Quartel</h3>
+                                    <div class="timeline-company">
+                                        <i class="fas fa-star"></i> Exército Brasileiro — Recrutamento Involuntário
+                                    </div>
+                                    <p class="timeline-desc">
+                                        Após uma carreira promissora de 1 dia descarregando equipamentos,
+                                        Netinho agora encara seu maior desafio: o exército.
+                                        Especialista em caixas pesadas, está bem preparado para a logística militar.
+                                        A adaptação ao horário das 5h da manhã ainda está <em>em avaliação</em>.
+                                    </p>
+
+                                    <!-- Tags militares -->
+                                    <div class="timeline-tags">
+                                        <span class="tag tag-army">🪖 Recruta Iniciante</span>
+                                        <span class="tag tag-army">😰 Em Avaliação</span>
+                                        <span class="tag tag-army">📦 Especialista em Caixas</span>
+                                        <span class="tag tag-army">☕ Anti-Madrugada</span>
+                                    </div>
+
+                                    <!-- Stats militares cômicos -->
+                                    <div class="exercito-stats">
+                                        <div class="estat-row">
+                                            <span class="estat-label">👀 Status:</span>
+                                            <span class="estat-val blink-green">Em avaliação pelo sargento</span>
+                                        </div>
+                                        <div class="estat-row">
+                                            <span class="estat-label">🎖️ Patente:</span>
+                                            <span class="estat-val">Recruta Nível -1</span>
+                                        </div>
+                                        <div class="estat-row">
+                                            <span class="estat-label">⏰ Acorda 5h:</span>
+                                            <span class="estat-val red-text">Probabilidade: 3%</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Barra de chance de sucesso -->
+                                    <div class="exercito-barra-wrap">
+                                        <div class="exercito-barra-label">
+                                            <span>Chance de Sobreviver ao Exército</span>
+                                            <span class="exercito-barra-pct" id="army-pct">0%</span>
+                                        </div>
+                                        <div class="progress-bar-bg">
+                                            <div class="progress-bar-fill exercito-fill" id="army-bar" data-value="50">
+                                            </div>
+                                        </div>
+                                        <p class="exercito-barra-note">* inclui tentativas de fingir doença</p>
+                                    </div>
+                                </div><!-- /exercito-texto -->
+
+                                <!-- Lado imagem -->
+                                <div class="exercito-img-col">
+                                    <div class="exercito-img-wrap">
+                                        <div class="exercito-img-badge">🫡 Recruta</div>
+                                        <img src="assets/imagem2.png" alt="Netinho fardado — ou quase isso"
+                                            class="exercito-photo" loading="lazy" />
+                                        <p class="exercito-img-caption">
+                                            "Eu vim, sargento.<br>Posso ir embora já?"
+                                        </p>
+                                    </div>
+                                </div><!-- /exercito-img-col -->
+
+                            </div><!-- /exercito-inner -->
+                        </div><!-- /timeline-card -->
+                    </div><!-- /timeline-item exército -->
+                </div>
+            </div>
+        </section>
+
+        <!-- MINI GAME -->
+        <section id="game" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title reveal">Mini <span>Jogo</span></h2>
+                <p class="section-sub reveal">Ajude o Netinho a pegar as caixas! Use ← → ou toque na tela.</p>
+                <div class="game-wrap reveal">
+                    <div class="game-info">
+                        <span>Pontos: <strong id="score">0</strong></span>
+                        <span>Vidas: <strong id="lives">❤️❤️❤️</strong></span>
+                        <span>Nível: <strong id="game-level">1</strong></span>
+                    </div>
+                    <canvas id="gameCanvas"></canvas>
+                    <div class="game-overlay" id="game-overlay">
+                        <div class="game-overlay-content">
+                            <div class="game-emoji">📦</div>
+                            <h3 id="overlay-title">Hora de Trabalhar!</h3>
+                            <p id="overlay-msg">Pegue as caixas antes que caiam.<br>Evite as caixas explosivas (💣)!</p>
+                            <button class="btn-primary" id="btn-start-game"><i class="fas fa-play"></i> Começar</button>
+                        </div>
+                    </div>
+                    <div class="game-controls-hint">
+                        <span><i class="fas fa-keyboard"></i> ← → para mover</span>
+                        <span><i class="fas fa-hand-pointer"></i> Toque nos lados</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDA PESSOAL -->
+        <section id="vida" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Vida <span>Pessoal</span></h2>
+                <p class="section-sub reveal">Transparência total. Menos que um relatório ESG.</p>
+                <div class="vida-grid">
+                    <div class="vida-card reveal">
+                        <div class="vida-card-icon">💔</div>
+                        <h3>Status de Relacionamento</h3>
+                        <p class="status-badge">Solteiro e Focado™</p>
+                        <p>Atualmente em um relacionamento sério com o YouTube, a cama e a geladeira. Aceita
+                            candidaturas mediante análise criteriosa.</p>
+                        <button class="btn-mini" onclick="openModal('modal-amor')">Ver detalhes 👀</button>
+                    </div>
+                    <div class="vida-card reveal">
+                        <div class="vida-card-icon">🎮</div>
+                        <h3>Hobbies</h3>
+                        <ul class="hobby-list">
+                            <li>🎮 Jogos (profissional não-remunerado)</li>
+                            <li>📱 Redes sociais (pesquisa de mercado)</li>
+                            <li>😴 Dormir (recuperação pós-traumática)</li>
+                            <li>🍕 Comer (manutenção do sistema)</li>
+                            <li>🤔 Pensar em trabalhar</li>
+                        </ul>
+                    </div>
+                    <div class="vida-card reveal">
+                        <div class="vida-card-icon">🌙</div>
+                        <h3>Rotina Diária</h3>
+                        <div class="rotina-timeline">
+                            <div class="rt-item"><span>10:00</span> Acordar (tentativa)</div>
+                            <div class="rt-item"><span>10:30</span> Acordar (sucesso)</div>
+                            <div class="rt-item"><span>11:00</span> Café da manhã / Almoço</div>
+                            <div class="rt-item"><span>14:00</span> "Vou estudar"</div>
+                            <div class="rt-item"><span>14:05</span> YouTube</div>
+                            <div class="rt-item"><span>23:00</span> "Amanhã eu começo"</div>
+                            <div class="rt-item"><span>02:00</span> Dormir</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METAS -->
+        <section id="metas" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title reveal">Metas de <span>Vida</span></h2>
+                <p class="section-sub reveal">Um plano. Uma visão. Um sonho. (Clique para marcar)</p>
+                <div class="metas-wrap reveal">
+                    <div class="meta-item">
+                        <div class="meta-checkbox"></div>
+                        <div class="meta-content">
+                            <h4>Conseguir primeiro emprego real</h4>
+                            <p>De preferência com ar-condicionado e sem precisar carregar caixas.</p>
+                        </div><span class="meta-icon">💼</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-checkbox"></div>
+                        <div class="meta-content">
+                            <h4>Comprar celular melhor</h4>
+                            <p>Esse tá na geração "não aguenta abrir dois apps ao mesmo tempo".</p>
+                        </div><span class="meta-icon">📱</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-checkbox"></div>
+                        <div class="meta-content">
+                            <h4>Ser independente</h4>
+                            <p>Financeiramente, emocionalmente, e saber fazer arroz sem queimar.</p>
+                        </div><span class="meta-icon">🦅</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-checkbox"></div>
+                        <div class="meta-content">
+                            <h4>Fazer um curso de TI</h4>
+                            <p>Transformar a experiência física em experiência digital. Evolução da espécie.</p>
+                        </div><span class="meta-icon">💻</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-checkbox"></div>
+                        <div class="meta-content">
+                            <h4>Tirar a CNH</h4>
+                            <p>Para de pedir carona pra mãe. A hora chegou.</p>
+                        </div><span class="meta-icon">🚗</span>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-checkbox"></div>
+                        <div class="meta-content">
+                            <h4>Se aposentar com dignidade</h4>
+                            <p>Meta de longo prazo. Muito longo prazo.</p>
+                        </div><span class="meta-icon">🏖️</span>
+                    </div>
+                </div>
+                <div class="metas-progress reveal">
+                    <p>Progresso de vida: <strong id="metas-pct">0%</strong></p>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill green" id="metas-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section id="contato" class="section">
+            <div class="container">
+                <div class="cta-wrap reveal">
+                    <div class="cta-badge">🎉 Parabéns, você chegou ao fim!</div>
+                    <h2 class="cta-title">Se você chegou até aqui,<br>já deveria contratar o <span>Netinho</span></h2>
+                    <p class="cta-sub">Você investiu seu tempo lendo este portfólio. Isso prova que tem bom gosto (ou
+                        muita paciência, que também é boa característica num funcionário).</p>
+                    <div class="cta-btns">
+                        <button class="btn-contratar" id="btn-contratar">🎊 Contratar Agora!</button>
+                        <button class="btn-pensar" id="btn-pensar">🤔 Preciso pensar mais</button>
+                        <a href="#hero" class="btn-rever">🔁 Ver novamente</a>
+                    </div>
+                    <div class="cta-contato">
+                        <p>Ou manda um sinal de fumaça. Qualquer coisa funciona.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="/cdn-cgi/l/email-protection#452b20312c2b2d2a053137242724292d24376b262a286b2737"
+                                class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <canvas id="confetti-canvas"></canvas>
+        </section>
+
+        <footer>
+            <p>Feito com 💪 e 1 dia de experiência &copy; Netinho 2025</p>
+            <p class="footer-small">Nenhuma caixa foi machucada na produção deste portfólio.</p>
+        </footer>
+
+    </main>
+
+    <!-- MODAL AMOR -->
+    <div class="modal-overlay hidden" id="modal-amor">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-amor')">&times;</button>
+            <div class="modal-emoji">💘</div>
+            <h3>Relatório de Relacionamento</h3>
+            <div class="modal-content">
+                <div class="modal-row"><strong>Status:</strong> Solteiro Premium</div>
+                <div class="modal-row"><strong>Última namorada:</strong> Dados insuficientes</div>
+                <div class="modal-row"><strong>Flirts no currículo:</strong> 2 (não confirmados)</div>
+                <div class="modal-row"><strong>Tipo ideal:</strong> Alguém que não ligue pra caixas</div>
+                <div class="modal-row"><strong>Red flag:</strong> Dorme até tarde</div>
+                <div class="modal-row"><strong>Green flag:</strong> Leal, honesto e carregou 50 caixas num dia</div>
+                <div class="modal-row"><strong>Disponibilidade:</strong> <span class="green-text">ABERTO A
+                        PROPOSTAS</span></div>
+            </div>
+            <button class="btn-primary" onclick="closeModal('modal-amor')">Entendi tudo 💕</button>
+        </div>
+    </div>
+
+    <!-- MODAL PENSAR -->
+    <div class="modal-overlay hidden" id="modal-pensar">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-pensar')">&times;</button>
+            <div class="modal-emoji">🤔</div>
+            <h3>Ainda pensando?</h3>
+            <p style="text-align:center;margin:1rem 0;color:var(--text-muted)">Enquanto você pensa, alguém mais esperto
+                vai contratar o Netinho primeiro.</p>
+            <div id="pensar-timer"
+                style="font-size:3rem;text-align:center;font-family:var(--font-mono);color:var(--accent)">10</div>
+            <p style="text-align:center;font-size:.85rem;color:var(--text-muted)">segundos até arrepender</p>
+            <div style="display:flex;gap:1rem;justify-content:center;margin-top:1.5rem">
+                <button class="btn-contratar"
+                    onclick="closeModal('modal-pensar');document.getElementById('btn-contratar').click()">Ok, vou
+                    contratar!</button>
+                <button class="btn-pensar" onclick="closeModal('modal-pensar')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
